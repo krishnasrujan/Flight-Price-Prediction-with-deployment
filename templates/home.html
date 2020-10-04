@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+
+  <meta charset="UTF-8">
+  <title>Flight Price Prediction</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body style="background-color:yellowgreen;">
+ <div class="login">
+ <center>
+    <h1>Flight Price Prediction</h1>
+    <br>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    
+        Departure Date and Time
+        <br>
+        <br>
+    	<input type="datetime-local" name="Dep_Time" placeholder="" required="required" />
+        <br><br>
+        
+        Arrival Date and Time
+        <br>
+        <br>
+        <input type="datetime-local" name="Arrival_Time" placeholder="" required="required" />
+		<br><br>
+
+        Source
+        <br>
+        <br>
+        <select name="Source" id="Source" required="required">
+        <option value="Delhi">Delhi</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Banglore">Banglore</option>
+        </select>
+        <br><br>
+        
+        Destination
+        <br>
+        <br>
+        <select name="Destination" id="Destination" required="required">
+        <option value="Banglore">Banglore</option>
+        <option value="Cochin">Cochin</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="New Delhi">New Delhi</option>
+        </select>
+        <br><br>
+        
+        Number Of Stops
+        <br>
+        <br>
+        <select name="stops" required="required">
+        <option value="0">Non-Stop</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        </select>
+        <br><br>
+        
+        Airline
+        <br>
+        <br>
+        <select name="airline" id="airline" required="required">
+        <option value="IndiGo">IndiGo</option>
+        <option value="Air India">Air India</option>
+        <option value="Multiple Carriers">Multiple Carriers</option>
+        <option value="SpiceJet">SpiceJet</option>
+        <option value="Vistara">Vistara</option>
+        <option value="Air Asia">Air Asia</option>
+        <option value="GoAir">GoAir</option>
+        <option value="Multiple Carriers Premium Economy">Multiple Carriers Premium Economy</option>
+        <option value="Vistara Premium Economy">Vistara Premium Economy</option>
+        <option value="Trujet">Trujet</option>
+        </select>
+        <br><br>
+        
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+</center>
+
+ </div>
+
+
+</body>
+</html>
