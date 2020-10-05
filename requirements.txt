@@ -2,10 +2,11 @@ appdirs==1.4.3
 certifi==2020.6.20
 click==7.1.2
 distlib==0.3.0
-Flask>=1.1.1
-gunicorn>=19.9.0
-itsdangerous>=1.1.0
-Jinja2>=2.10.1
+Flask==1.1.2
+Flask-Cors==3.0.8
+gunicorn==20.0.4
+itsdangerous==1.1.0
+Jinja2==2.11.2
 joblib==0.16.0
 MarkupSafe==1.1.1
 numpy==1.18.1
@@ -18,3 +19,4 @@ six==1.14.0
 virtualenv==20.0.7
 Werkzeug==1.0.1
 wincertstore==0.2
+xgboost==1.2.0
