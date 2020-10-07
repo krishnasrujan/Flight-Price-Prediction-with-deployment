@@ -13,7 +13,7 @@ Before dropping Jet Airways I cheched built few models just to compare them with
 
 Here are the observed results for r squared metric.
 
-<img width="248" alt="JET AIR " src="https://user-images.githubusercontent.com/48923446/95360528-1e149680-08e9-11eb-949e-ce2f4103c53e.png">
+<img width="253" alt="JET AIR " src="https://user-images.githubusercontent.com/48923446/95361296-2faa6e00-08ea-11eb-827d-b1c37e6a6156.png">
 
 Results after dropping Jet airways from airline column:
 
