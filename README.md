@@ -22,7 +22,7 @@ Results after dropping Jet airways from airline column:
 
 I have selected XGB without tuning as my final model.
 
-Here is the plot for feature importances
+Here is the plot for feature importances. Total stops is the most important feature in predicting the flight prices.
 
 <img width="501" alt="flightprice_feature_importances" src="https://user-images.githubusercontent.com/48923446/95364239-363ae480-08ee-11eb-831b-bf4b792c1dd4.png">
 
@@ -30,6 +30,6 @@ The scatter plot for y_true and y_prediction.
 
 <img width="284" alt="t_p_scat" src="https://user-images.githubusercontent.com/48923446/95364354-5bc7ee00-08ee-11eb-8b51-ca1613e88cba.png">
 
-Below plot shows that there is Normality of residuals
+Below plot shows that there is Normality in residuals
 
 <img width="268" alt="resid_hist" src="https://user-images.githubusercontent.com/48923446/95364375-608ca200-08ee-11eb-9107-8ae0de9c8f4e.png">
