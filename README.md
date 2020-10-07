@@ -17,4 +17,4 @@ Here are the observed results for r squared metric.
 
 Results after dropping Jet airways from airline column:
 
-<img width="216" alt="rm jet air" src="https://user-images.githubusercontent.com/48923446/95361005-cb87aa00-08e9-11eb-9e66-a7fab00d11a4.png">
+<img width="242" alt="rm jet air " src="https://user-images.githubusercontent.com/48923446/95361783-cd05a200-08ea-11eb-8c31-eb97d8853ec9.png">
