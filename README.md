@@ -2,7 +2,7 @@
 Dataset link: https://www.kaggle.com/nikhilmittal/flight-fare-prediction-mh
 
 In this project I have built a model which predicts flight price by taking few inputs such as departure date, arrival date, airline, source and destination. \
-I have deployed the model using flask, you can access it from this link https://flight-prices-prediction.herokuapp.com/
+Link to web application: https://flight-prices-prediction.herokuapp.com/
 
 <img width="379" alt="Screenshot 2020-10-07 214447" src="https://user-images.githubusercontent.com/48923446/95358201-6b433900-08e6-11eb-9a6d-4a1c14b6a058.png">
 
@@ -30,6 +30,6 @@ The scatter plot for y_true and y_prediction.
 
 <img width="284" alt="t_p_scat" src="https://user-images.githubusercontent.com/48923446/95364354-5bc7ee00-08ee-11eb-8b51-ca1613e88cba.png">
 
-Below plot shows that there is Normality in residuals
+Below plot shows that there is normality in residuals.
 
 <img width="268" alt="resid_hist" src="https://user-images.githubusercontent.com/48923446/95364375-608ca200-08ee-11eb-9107-8ae0de9c8f4e.png">
