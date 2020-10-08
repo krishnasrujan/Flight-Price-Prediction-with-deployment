@@ -1,4 +1,8 @@
 # Flight Price Prediction
+
+![flight](https://user-images.githubusercontent.com/48923446/95487431-f3424500-09b1-11eb-8e18-9a2394fa5acd.jpg)
+
+
 Dataset link: https://www.kaggle.com/nikhilmittal/flight-fare-prediction-mh
 
 In this project I have built a model which predicts flight price by taking few inputs such as departure date, arrival date, airline, source and destination. \
@@ -20,7 +24,7 @@ Results after dropping Jet airways from airline column:
 <img width="353" alt="metrics_flight" src="https://user-images.githubusercontent.com/48923446/95487143-8dee5400-09b1-11eb-9ae3-4c67fb52239f.png">
 
 
-I have selected XGB without tuning as my final model.
+I have selected XGB with tuning as my final model.
 
 Here is the plot for feature importances. Total stops is the most important feature in predicting the flight prices.
 
