@@ -10,24 +10,41 @@ Link to web application: https://flight-prices-prediction.herokuapp.com/
 Dataset link: https://www.kaggle.com/nikhilmittal/flight-fare-prediction-mh
 
 # Data Description
+
 The dataset consists of 11 features 
+
 Airline  :- Name of airline iin which passenger is travelling
+
 Date_of_Journey:- Date of journey in year, month and date format. 
+
 Source:- City from which passenger is travelling.
+
 Destination:- City to which passenger is travelling.
+
 Route:- Route which aeroplane takes. It includes all the stoppages.
+
 Dep_Time:- Time at which aeroplane departs.
+
 Arrival_Time:- Time at which aeroplane reaches destination.
+
 Duration:- Duration of entire journey.
+
 Total_Stops:- Total stops of aeroplane during the journey
+
 Additional_Info:- Additional information such as meals included etc.
+
 Price:- Price of the ticket which is the target feature.
 
 # Preprocessing
+
 Dropped  route and additional info columns.
+
 Departure time and Arrival time are strings. We need to extract hour and minute from both the columns.
+
 Extracted journey date, journey month and journey day(day of the week) from Date_of_Journey column and dropped that column after extracting.
+
 Created a new duration column. Even tough duration column is available, it is a string. Extracted hour and minutes from the string and converted it into minutes. Now all the duration values are in minutes. Used joblib for this task for parallel processing.
+
 One hot encoded all the categorical features as all of them are nominal. Now the dataset is ready to be modelled.
 
 # Model Building
