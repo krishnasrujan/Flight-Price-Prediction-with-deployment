@@ -58,19 +58,19 @@ Here are the observed results for r squared metric.
 
 Results after dropping Jet airways from airline column:
 
-<img width="353" alt="metrics_flight" src="https://user-images.githubusercontent.com/48923446/95487143-8dee5400-09b1-11eb-9ae3-4c67fb52239f.png">
+<img width="300" alt="flight_mdels" src="https://user-images.githubusercontent.com/48923446/96366720-08179900-1167-11eb-85b6-cd41eb7e7046.PNG">
 
 
 I have selected XGB with tuning as my final model.
 
 Here is the plot for feature importances. Total stops is the most important feature in predicting the flight prices.
 
-<img width="668" alt="flightprice_feature_importances" src="https://user-images.githubusercontent.com/48923446/95487102-829b2880-09b1-11eb-915d-4ebe6131465d.png">
+<img width="700" alt="flightprice_feature_importances" src="https://user-images.githubusercontent.com/48923446/96366721-09e15c80-1167-11eb-9425-e1ff678facb4.png">
 
 The scatter plot for y_true and y_prediction.
 
-<img width="654" alt="y_y_p_flight" src="https://user-images.githubusercontent.com/48923446/95487264-bb3b0200-09b1-11eb-9aa9-6cbea850dfda.png">
+<img width="674" alt="y_y_p_flight" src="https://user-images.githubusercontent.com/48923446/96366725-0fd73d80-1167-11eb-84b8-f4d1b2013ead.png">
 
 Below plot shows that there is normality in residuals.
 
-<img width="653" alt="resid_flight" src="https://user-images.githubusercontent.com/48923446/95487120-875fdc80-09b1-11eb-9d56-08a18ff4e59a.png">
+<img width="687" alt="resid_flight" src="https://user-images.githubusercontent.com/48923446/96366723-0d74e380-1167-11eb-8043-4f317f6efdb1.png">
