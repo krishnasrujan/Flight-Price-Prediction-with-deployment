@@ -35,7 +35,7 @@ Additional_Info:- Additional information such as meals included etc.
 
 Price:- Price of the ticket which is the target feature.
 
-# Preprocessing
+# Data Wrangling
 
 Dropped  route and additional info columns.
 
